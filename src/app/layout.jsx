@@ -5,7 +5,7 @@ import "./globals.css";
 // components
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
-import PreloaderTransition from "@/components/PreloaderTransition";
+import Preloader from "@/components/Preloader";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${jetBrainsMono.variable} ${shojumaru.variable}`}>
         <Header />
-        <PreloaderTransition/>
+        <Preloader/>
         <PageTransition>{children}</PageTransition>
       </body>
     </html>
